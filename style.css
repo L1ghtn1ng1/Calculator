@@ -1,6 +1,9 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .display{
@@ -8,4 +11,44 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    padding-bottom: 8px;
+}
+
+#input{
+    margin: 10px;
+    padding: 10px;
+    width: 275px;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    color: black;
+}
+
+button{
+    width:80px;
+    height: 80px;
+    font-size: 20px;
+    background-color: rgb(43, 133, 168);
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: rgb(31, 91, 116);
+}
+
+#plus:active, #minus:active, #multiply:active, #divide:active, #equal:active, #clear:active{
+    background-color: rgb(95, 25, 66);
+}
+
+button#plus, button#minus, button#multiply, button#divide, button#equal, button#clear {
+    background-color: rgb(155, 36, 105);
+}
+
+
+.first-row, .second-row, .third-row, .fourth-row{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
